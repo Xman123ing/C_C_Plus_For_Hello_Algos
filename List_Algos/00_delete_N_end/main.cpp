@@ -4,6 +4,8 @@
 
 int main()
 {
+    // 00: 删除末尾N个节点
+    // 时间复杂度：O(n)
     // generate lists
     GenList list_obj;
     list_obj.setList(10);

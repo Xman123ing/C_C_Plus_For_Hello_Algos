@@ -33,6 +33,17 @@ void GenList::setList(uint32_t num)
     }
 }
 
+bool GenList::setHead(pNote pHead)
+{
+    if (pHead_ == nullptr || pHead == nullptr) {
+        pHead_ = pHead;
+        return true;
+    }
+
+    std::cout << "list has been initialized" << std::endl;
+    return false;
+}
+
 void GenList::showList()
 {
     if (pHead_ == nullptr || pHead_->pNext_ == nullptr) {

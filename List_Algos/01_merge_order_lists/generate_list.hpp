@@ -30,11 +30,14 @@ public:
     ~GenList(){destroyList();}
 
     void setList(uint32_t num);
-    pNote getList()const{return pHead_;}
+    bool setHead(pNote pHead);
+    pNote getList() const {return pHead_;}
     void showList();
     void removeItemFrom(pNote pStartDel, uint32_t num);
     void destroyList();
     void bubble_sort();
+    void setNum(uint32_t num) {num_ = num;}
+    uint32_t getNum() const {return num_;}
 
 private:
     uint32_t num_;
